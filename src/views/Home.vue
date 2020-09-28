@@ -1,18 +1,32 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container">
+      <h1>Bored?</h1>
+    </div>
+    <ReuestInfo />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import ReuestInfo from "../components/RequestInfo";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld
+    ReuestInfo,
+  },
+};
+</script>
+<style>
+form {
+  display: flex;
+  justify-content: center;
+  background-color: floralwhite;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    margin: 0%;
   }
 }
-</script>
+</style>
